@@ -26,7 +26,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-yarn.lock
+
 
 # out dir
 dist/
