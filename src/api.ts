@@ -10,6 +10,10 @@ app.use(express.raw({ type: 'application/vnd.custom-type' }));
 app.use(express.text({ type: 'text/html' }));
 
 // Healthcheck endpoint
+app.get('/', (req, res) => {
+  res.status(200).send('ok');
+});
+
 app.post('/', (req, res) => {
   const { challenge } = req.body;
   res.status(200).send({ challenge });
