@@ -20,10 +20,5 @@ api.get('/hello', (req, res) => {
   res.status(200).send({ message: 'hello world' });
 });
 
-api.post('/', (req, res) => {
-  const { challenge } = req.body;
-  res.status(200).send({ challenge });
-});
-
 // Version the api
 app.use('/api/v1', api);
