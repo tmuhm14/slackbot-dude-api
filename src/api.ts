@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.status(200).send({ status: 'ok' });
 });
 
+app.get('/health', (req, res) => {
+  res.status(200).send({ status: 'ok' });
+});
+
 const api = express.Router();
 
 api.get('/hello', (req, res) => {
